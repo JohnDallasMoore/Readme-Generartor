@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const {questions} = require('./questions')
-// const {generateMarkdown} = require('./utils/generateMarkdown')
+// const generateMarkdown = require('./utils/generateMarkdown')
 const inquirer = require('inquirer');
 const fs = require('fs');
 
@@ -25,8 +25,8 @@ function generateMarkdown(answers) {
 ### ${answers.credits}
 
 ## Contact
-### ${answers.email}
-### ${answers.github}
+### For any questions, please feel free to send me an email at ${answers.email}.
+### Check out my [GitHub](https://github.com/${answers.github}/)
 `;
   }
 
