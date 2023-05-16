@@ -1,12 +1,42 @@
 // TODO: Include packages needed for this application
 const {questions} = require('./questions')
+// const {generateMarkdown} = require('./utils/generateMarkdown')
 const inquirer = require('inquirer');
-// const fs = require('fs');
+const fs = require('fs');
+
+
+function generateMarkdown(answers) {
+    return `
+# ${answers.title}
+
+## Description
+### ${answers.description}
+
+## Installation
+### ${answers.installation}
+
+## Usage
+### ${answers.usage}
+
+## License
+### ${answers.license}
+
+## Credits
+### ${answers.credits}
+
+## Contact
+### ${answers.email}
+### ${answers.github}
+`;
+  }
 
 function askQuestions(){
     inquirer.prompt(questions).then(function(answers){
         console.log(answers);
-    })
+        fs.appendFile('README.md', generateMarkdown(answers), 'utf-8', function(err){
+            console.error(err);
+        })
+    });
 }
 
 function main(){
