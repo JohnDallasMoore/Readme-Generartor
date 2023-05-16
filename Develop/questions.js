@@ -40,5 +40,8 @@ const questions = [
         message: "What is your GitHub username?",
         name: "github"
     }
+];
 
-]
+module.exports = {
+    questions
+}
