@@ -9,24 +9,32 @@ function generateMarkdown(answers) {
     return `
 # ${answers.title}
 
-## Description
-### ${answers.description}
+### Table of Contents
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Credits](#Credits)
+- [Contact](#Contact)
 
-## Installation
-### ${answers.installation}
+### Description
+> ${answers.description}
 
-## Usage
-### ${answers.usage}
+### Installation
+> ${answers.installation}
 
-## License
-### ${answers.license}
+### Usage
+> ${answers.usage}
 
-## Credits
-### ${answers.credits}
+### License
+> ${answers.license}
 
-## Contact
-### For any questions, please feel free to send me an email at ${answers.email}.
-### Check out my [GitHub](https://github.com/${answers.github}/)
+### Credits
+> ${answers.credits}
+
+### Contact
+> For any questions, please feel free to send me an email at ${answers.email}.   
+> Check out my [GitHub](https://github.com/${answers.github}/)
 `;
   }
 
