@@ -11,7 +11,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Please provide installation instructions:",
+        message: "Please provide installation instructions(if providing code snippet, enclose in backticks):",
         name: "installation"
     },
     {
