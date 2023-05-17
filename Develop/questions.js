@@ -23,7 +23,7 @@ const questions = [
         type: 'list',
         message: "What type of license did you use?",
         name: 'license',
-        choices: ['GNU', 'MIT', 'Apache']
+        choices: ['MIT', 'GNU', 'Apache']
     },
     {
         type: "input",
@@ -40,7 +40,7 @@ const questions = [
         message: "What is your GitHub username?",
         name: "github"
     }
-];
+]
 
 module.exports = {
     questions
