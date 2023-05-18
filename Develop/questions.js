@@ -1,4 +1,4 @@
-const questions = [
+module.exports = [
     {
         type: "input",
         message: "What is your project's title?",
@@ -41,7 +41,3 @@ const questions = [
         name: "github"
     }
 ]
-
-module.exports = {
-    questions
-}

@@ -1,4 +1,4 @@
-function generateMarkdown(answers) {
+module.exports = function (answers) {
   
   let licenseBadge;
 
@@ -52,8 +52,4 @@ function generateMarkdown(answers) {
   > For any questions, please feel free to send me an email at ${answers.email}.   
   > Check out my [GitHub](https://github.com/${answers.github}/)
 `;
-}
-
-module.exports = {
-  generateMarkdown
 }
