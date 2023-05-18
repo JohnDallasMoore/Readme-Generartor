@@ -20,28 +20,34 @@ function generateMarkdown(answers) {
   # ${answers.title}
   ---
   ### Table of Contents
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [License](#License)
-  - [Credits](#Credits)
-  - [Contact](#Contact)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Credits](#credits)
+  - [Contact](#contact)
   ---
+  <a id='description'></a>
   ### Description
   > ${answers.description}
   ---
+  <a id='installation'></a>
   ### Installation
   > ${answers.installation}
   ---
+  <a id='usage'></a>
   ### Usage
   > ${answers.usage}
   ---
+  <a id='license'></a>
   ### License
   > ${licenseBadge}
   ---
+  <a id='credits'></a>
   ### Credits
   > ${answers.credits}
   ---
+  <a id='contact'></a>
   ### Contact
   > For any questions, please feel free to send me an email at ${answers.email}.   
   > Check out my [GitHub](https://github.com/${answers.github}/)
