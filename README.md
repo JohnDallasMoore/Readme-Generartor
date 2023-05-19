@@ -11,7 +11,7 @@
   ---
   <a id='description'></a>
   ### Description
-  > This is a command line utility that allows the user to generate a readme file for their projects.  It is a JavaScript-based Node.js tool that automates the readme creation process by prompting deatils via Inquirer and creating structured content.
+  > This is a command line utility that allows the user to generate a readme file for their projects.  It is a JavaScript-based Node.js tool that automates the readme creation process by prompting details via Inquirer and creating structured content.
   ---
   <a id='installation'></a>
   ### Installation
